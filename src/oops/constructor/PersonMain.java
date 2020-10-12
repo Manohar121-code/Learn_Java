@@ -1,6 +1,8 @@
 package oops.constructor;
 
 public class PersonMain {
+	static int i = 10;
+	int j = 20;
 	public static void main(String[] args) {
 		Person manohar = new Person();
 		System.out.println(manohar);
@@ -20,5 +22,24 @@ public class PersonMain {
 		
 		Person chakri = new Person(12, "India");
 		System.out.println(chakri);
+		staticMethod();
+		System.out.println(i);
+//		System.out.println(j);
+	}
+	
+	public static void staticMethod() {
+		System.out.println("static() called!!!");
+	}
+	
+	public void m1() {
+		m2();
+		System.out.println(i);
+		System.out.println(j);
+		staticMethod();
+		System.out.println("m1() called!!!");
+	}
+	public void m2() {
+		
+		System.out.println("m2() called!!!");
 	}
 }
