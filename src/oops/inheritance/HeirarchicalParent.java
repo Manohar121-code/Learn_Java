@@ -1,35 +1,33 @@
 package oops.inheritance;
 
-public class A {
+public class HeirarchicalParent {
 	private int id;
 	private String name;
-	
-	public A() {
-		System.out.println("A constructor called!!!");
-	}
-	
-	public A(int id, String name) {
+
+	public HeirarchicalParent(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
-	
+
+	public HeirarchicalParent() {
+		
+	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	@Override
-	public String toString() {
-		return "Parent [id=" + id + ", name=" + name + "]";
-	}
-	
 }

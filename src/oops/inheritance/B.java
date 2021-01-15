@@ -5,13 +5,7 @@ public class B extends A {
 	private String address;
 	
 	public B() {
-		super();
-	}
-
-	public B(int id, String name, int phone, String address) {
-		super(id, name);
-		this.phone = phone;
-		this.address = address;
+		System.out.println("B constructor called!!!");
 	}
 	
 	public B(int phone, String address) {
